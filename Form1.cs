@@ -6,5 +6,25 @@ namespace FrmSport
         {
             InitializeComponent();
         }
+
+        private void GrpSports_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSport_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAjout_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Exercice_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Premier test affichage");
+        }
     }
 }

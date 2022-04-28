@@ -30,8 +30,8 @@
         {
             this.GrpSports = new System.Windows.Forms.GroupBox();
             this.GrpSaisieSport = new System.Windows.Forms.GroupBox();
-            this.TxtSport = new System.Windows.Forms.TextBox();
             this.BtnAjout = new System.Windows.Forms.Button();
+            this.TxtSport = new System.Windows.Forms.TextBox();
             this.BtnLeave = new System.Windows.Forms.Button();
             this.GrpSaisieSport.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +44,7 @@
             this.GrpSports.TabIndex = 0;
             this.GrpSports.TabStop = false;
             this.GrpSports.Text = "Sports";
+            this.GrpSports.Enter += new System.EventHandler(this.GrpSports_Enter);
             // 
             // GrpSaisieSport
             // 
@@ -56,13 +57,6 @@
             this.GrpSaisieSport.TabStop = false;
             this.GrpSaisieSport.Text = "Saisie d\'un sport";
             // 
-            // TxtSport
-            // 
-            this.TxtSport.Location = new System.Drawing.Point(6, 26);
-            this.TxtSport.Name = "TxtSport";
-            this.TxtSport.Size = new System.Drawing.Size(255, 27);
-            this.TxtSport.TabIndex = 0;
-            // 
             // BtnAjout
             // 
             this.BtnAjout.Location = new System.Drawing.Point(287, 26);
@@ -71,6 +65,15 @@
             this.BtnAjout.TabIndex = 1;
             this.BtnAjout.Text = "Ajouter";
             this.BtnAjout.UseVisualStyleBackColor = true;
+            this.BtnAjout.Click += new System.EventHandler(this.BtnAjout_Click);
+            // 
+            // TxtSport
+            // 
+            this.TxtSport.Location = new System.Drawing.Point(6, 26);
+            this.TxtSport.Name = "TxtSport";
+            this.TxtSport.Size = new System.Drawing.Size(255, 27);
+            this.TxtSport.TabIndex = 0;
+            this.TxtSport.TextChanged += new System.EventHandler(this.TxtSport_TextChanged);
             // 
             // BtnLeave
             // 
@@ -91,6 +94,7 @@
             this.Controls.Add(this.GrpSports);
             this.Name = "Exercice";
             this.Text = "Exercice 2";
+            this.Load += new System.EventHandler(this.Exercice_Load);
             this.GrpSaisieSport.ResumeLayout(false);
             this.GrpSaisieSport.PerformLayout();
             this.ResumeLayout(false);
