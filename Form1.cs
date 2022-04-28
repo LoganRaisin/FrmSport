@@ -1,8 +1,8 @@
 namespace FrmSport
 {
-    public partial class Form1 : Form
+    public partial class Exercice : Form
     {
-        public Form1()
+        public Exercice()
         {
             InitializeComponent();
         }
