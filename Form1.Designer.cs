@@ -33,11 +33,14 @@
             this.BtnAjout = new System.Windows.Forms.Button();
             this.TxtSport = new System.Windows.Forms.TextBox();
             this.BtnLeave = new System.Windows.Forms.Button();
+            this.Sport1 = new System.Windows.Forms.Label();
+            this.GrpSports.SuspendLayout();
             this.GrpSaisieSport.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpSports
             // 
+            this.GrpSports.Controls.Add(this.Sport1);
             this.GrpSports.Location = new System.Drawing.Point(106, 42);
             this.GrpSports.Name = "GrpSports";
             this.GrpSports.Size = new System.Drawing.Size(250, 125);
@@ -84,6 +87,14 @@
             this.BtnLeave.Text = "Quitter";
             this.BtnLeave.UseVisualStyleBackColor = true;
             // 
+            // Sport1
+            // 
+            this.Sport1.AutoSize = true;
+            this.Sport1.Location = new System.Drawing.Point(6, 32);
+            this.Sport1.Name = "Sport1";
+            this.Sport1.Size = new System.Drawing.Size(0, 20);
+            this.Sport1.TabIndex = 0;
+            // 
             // Exercice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -95,6 +106,8 @@
             this.Name = "Exercice";
             this.Text = "Exercice 2";
             this.Load += new System.EventHandler(this.Exercice_Load);
+            this.GrpSports.ResumeLayout(false);
+            this.GrpSports.PerformLayout();
             this.GrpSaisieSport.ResumeLayout(false);
             this.GrpSaisieSport.PerformLayout();
             this.ResumeLayout(false);
@@ -108,5 +121,6 @@
         private Button BtnAjout;
         private TextBox TxtSport;
         private Button BtnLeave;
+        private Label Sport1;
     }
 }

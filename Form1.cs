@@ -19,7 +19,8 @@ namespace FrmSport
 
         private void BtnAjout_Click(object sender, EventArgs e)
         {
-            
+            string leSport = this.TxtSport.Text;
+            this.Sport1.Text = leSport;
         }
 
         private void Exercice_Load(object sender, EventArgs e)
