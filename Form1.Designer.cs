@@ -74,7 +74,7 @@
             // 
             // BtnLeave
             // 
-            this.BtnLeave.Location = new System.Drawing.Point(509, 365);
+            this.BtnLeave.Location = new System.Drawing.Point(509, 367);
             this.BtnLeave.Name = "BtnLeave";
             this.BtnLeave.Size = new System.Drawing.Size(122, 29);
             this.BtnLeave.TabIndex = 2;
