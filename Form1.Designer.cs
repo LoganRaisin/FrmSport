@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.GrpSports = new System.Windows.Forms.GroupBox();
+            this.Sport1 = new System.Windows.Forms.Label();
             this.GrpSaisieSport = new System.Windows.Forms.GroupBox();
             this.BtnAjout = new System.Windows.Forms.Button();
             this.TxtSport = new System.Windows.Forms.TextBox();
             this.BtnLeave = new System.Windows.Forms.Button();
-            this.Sport1 = new System.Windows.Forms.Label();
             this.GrpSports.SuspendLayout();
             this.GrpSaisieSport.SuspendLayout();
             this.SuspendLayout();
@@ -41,13 +41,21 @@
             // GrpSports
             // 
             this.GrpSports.Controls.Add(this.Sport1);
-            this.GrpSports.Location = new System.Drawing.Point(106, 42);
+            this.GrpSports.Location = new System.Drawing.Point(106, 46);
             this.GrpSports.Name = "GrpSports";
             this.GrpSports.Size = new System.Drawing.Size(250, 125);
             this.GrpSports.TabIndex = 0;
             this.GrpSports.TabStop = false;
             this.GrpSports.Text = "Sports";
             this.GrpSports.Enter += new System.EventHandler(this.GrpSports_Enter);
+            // 
+            // Sport1
+            // 
+            this.Sport1.AutoSize = true;
+            this.Sport1.Location = new System.Drawing.Point(6, 32);
+            this.Sport1.Name = "Sport1";
+            this.Sport1.Size = new System.Drawing.Size(0, 20);
+            this.Sport1.TabIndex = 0;
             // 
             // GrpSaisieSport
             // 
@@ -86,14 +94,7 @@
             this.BtnLeave.TabIndex = 2;
             this.BtnLeave.Text = "Quitter";
             this.BtnLeave.UseVisualStyleBackColor = true;
-            // 
-            // Sport1
-            // 
-            this.Sport1.AutoSize = true;
-            this.Sport1.Location = new System.Drawing.Point(6, 32);
-            this.Sport1.Name = "Sport1";
-            this.Sport1.Size = new System.Drawing.Size(0, 20);
-            this.Sport1.TabIndex = 0;
+            this.BtnLeave.Click += new System.EventHandler(this.BtnLeave_Click);
             // 
             // Exercice
             // 
