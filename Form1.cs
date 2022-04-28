@@ -20,11 +20,13 @@ namespace FrmSport
         private void BtnAjout_Click(object sender, EventArgs e)
         {
             string leSport = this.TxtSport.Text;
-            List<Label> listeSports = new List<Label>();
-            listeSports.Add (new Label() { Text = leSport } );
-            foreach( Label sport in listeSports)
+            List<Label> listeSports = new List<Label>(); //creation de la liste
+            listeSports.Add (new Label() { Text = leSport } ); // ajout d'un objet label a chaque click
+            foreach( Label sport in listeSports) //parcours de liste pour afficher dans le groupe
             {
-
+                ///savoir comment ajouter le label au bon endroit
+                ///changer les coordonées de la prochaine a chaque fois que la boucle fini
+                ///donc besoin d'une variable qui s'incrémente.
             }
         }
 
